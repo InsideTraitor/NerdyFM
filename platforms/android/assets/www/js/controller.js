@@ -34,7 +34,7 @@ angular.module('nerdyfm.controller', [])
     $scope.showDevicePicker = function() {
         ConnectSDK.discoveryManager.pickDevice().success(function (device) {
             var sendVideo = function() {
-                device.getMediaPlayer().playMedia("http://media.w3.org/2010/05/sintel/trailer.mp4", "video/mp4");
+                device.getMediaPlayer().playMedia("http://streams4.museter.com:8344/;stream.nsv");
             };
 
             if (device.isReady()) { // already connected

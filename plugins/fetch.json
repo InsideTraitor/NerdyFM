@@ -72,9 +72,8 @@
     },
     "com.danielcwilson.plugins.googleanalytics": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/tabrindle/google-analytics-plugin",
-            "subdir": "."
+            "type": "registry",
+            "id": "com.danielcwilson.plugins.googleanalytics"
         }
     },
     "com.google.playservices": {
@@ -87,6 +86,13 @@
         "source": {
             "type": "git",
             "url": "https://github.com/ConnectSDK/Connect-SDK-Cordova-Plugin.git",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-google-analytics": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/danwilson/google-analytics-plugin",
             "subdir": "."
         }
     }

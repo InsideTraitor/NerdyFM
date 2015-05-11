@@ -1,10 +1,39 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/com.connectsdk.cordovaplugin/www/ConnectSDK.js",
+        "id": "com.connectsdk.cordovaplugin.ConnectSDK.js",
+        "merges": [
+            "navigator.ConnectSDK",
+            "ConnectSDK"
+        ]
+    },
+    {
         "file": "plugins/com.ionic.keyboard/www/keyboard.js",
         "id": "com.ionic.keyboard.keyboard",
         "clobbers": [
             "cordova.plugins.Keyboard"
+        ]
+    },
+    {
+        "file": "plugins/com.rd11.remote-controls/www/RemoteControls.js",
+        "id": "com.rd11.remote-controls.RemoteControls",
+        "clobbers": [
+            "window.remoteControls"
+        ]
+    },
+    {
+        "file": "plugins/com.silverorange.now-playing/www/nowplaying.js",
+        "id": "com.silverorange.now-playing.now-playing",
+        "clobbers": [
+            "window.NowPlaying"
+        ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
+        "id": "nl.x-services.plugins.socialsharing.SocialSharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
         ]
     },
     {
@@ -19,6 +48,13 @@ module.exports = [
         "id": "org.apache.cordova.console.logger",
         "clobbers": [
             "cordova.logger"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
         ]
     },
     {
@@ -168,32 +204,11 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/org.apache.cordova.device/www/device.js",
-        "id": "org.apache.cordova.device.device",
-        "clobbers": [
-            "device"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
         "id": "org.apache.cordova.inappbrowser.inappbrowser",
         "clobbers": [
             "cordova.InAppBrowser.open",
             "window.open"
-        ]
-    },
-    {
-        "file": "plugins/com.silverorange.now-playing/www/nowplaying.js",
-        "id": "com.silverorange.now-playing.now-playing",
-        "clobbers": [
-            "window.NowPlaying"
-        ]
-    },
-    {
-        "file": "plugins/com.rd11.remote-controls/www/RemoteControls.js",
-        "id": "com.rd11.remote-controls.RemoteControls",
-        "clobbers": [
-            "window.remoteControls"
         ]
     },
     {
@@ -218,44 +233,29 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
-        "id": "nl.x-services.plugins.socialsharing.SocialSharing",
-        "clobbers": [
-            "window.plugins.socialsharing"
-        ]
-    },
-    {
         "file": "plugins/com.danielcwilson.plugins.googleanalytics/www/analytics.js",
         "id": "com.danielcwilson.plugins.googleanalytics.UniversalAnalytics",
         "clobbers": [
             "analytics"
-        ]
-    },
-    {
-        "file": "plugins/com.connectsdk.cordovaplugin/www/ConnectSDK.js",
-        "id": "com.connectsdk.cordovaplugin.ConnectSDK.js",
-        "merges": [
-            "navigator.ConnectSDK",
-            "ConnectSDK"
         ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "com.connectsdk.cordovaplugin": "1.2.0",
     "com.ionic.keyboard": "1.0.4",
-    "org.apache.cordova.console": "0.2.13",
-    "org.apache.cordova.file": "1.3.3",
-    "org.apache.cordova.device": "0.3.0",
-    "org.apache.cordova.inappbrowser": "0.6.1-dev",
+    "com.rd11.remote-controls": "1.0.0",
     "com.silverorange.now-playing": "1.0.0",
     "nl.kingsquare.cordova.background-audio": "1.0.0",
-    "com.rd11.remote-controls": "1.0.0",
+    "nl.x-services.plugins.socialsharing": "4.3.15",
+    "org.apache.cordova.console": "0.2.13",
+    "org.apache.cordova.device": "0.3.0",
+    "org.apache.cordova.file": "1.3.3",
+    "org.apache.cordova.inappbrowser": "0.6.1-dev",
     "org.apache.cordova.media": "0.2.16",
     "org.apache.cordova.statusbar": "0.1.11-dev",
-    "nl.x-services.plugins.socialsharing": "4.3.15",
-    "com.danielcwilson.plugins.googleanalytics": "0.7.0",
-    "com.connectsdk.cordovaplugin": "1.2.0"
+    "com.danielcwilson.plugins.googleanalytics": "0.6.1"
 }
 // BOTTOM OF METADATA
 });

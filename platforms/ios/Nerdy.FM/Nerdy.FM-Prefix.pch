@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'NerdyFM' target in the 'NerdyFM' project
+// Prefix header for all source files of the 'Nerdy.FM' target in the 'Nerdy.FM' project
 //
 
 #ifdef __OBJC__

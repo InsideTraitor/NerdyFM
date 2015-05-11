@@ -19,14 +19,13 @@
 
 //
 //  MainViewController.h
-//  NerdyFM
+//  Nerdy.FM
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
 #import "MainViewController.h"
-#import "RemoteControls.h"
 
 @implementation MainViewController
 
@@ -75,9 +74,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     // Do any additional setup after loading the view from its nib.
-    [[RemoteControls remoteControls] setWebView:self.webView];
 }
 
 - (void)viewDidUnload
@@ -85,11 +82,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
-}
-
-- (void)remoteControlReceivedWithEvent:(UIEvent *)receivedEvent {
-   [[RemoteControls remoteControls] receiveRemoteEvent:receivedEvent];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

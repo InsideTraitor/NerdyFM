@@ -65,18 +65,18 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.danielcwilson.plugins.googleanalytics/www/analytics.js",
-        "id": "com.danielcwilson.plugins.googleanalytics.UniversalAnalytics",
-        "clobbers": [
-            "analytics"
-        ]
-    },
-    {
         "file": "plugins/com.connectsdk.cordovaplugin/www/ConnectSDK.js",
         "id": "com.connectsdk.cordovaplugin.ConnectSDK.js",
         "merges": [
             "navigator.ConnectSDK",
             "ConnectSDK"
+        ]
+    },
+    {
+        "file": "plugins/com.danielcwilson.plugins.googleanalytics/www/analytics.js",
+        "id": "com.danielcwilson.plugins.googleanalytics.UniversalAnalytics",
+        "clobbers": [
+            "analytics"
         ]
     },
     {
@@ -239,10 +239,9 @@ module.exports.metadata =
     "org.apache.cordova.media": "0.2.16",
     "org.apache.cordova.statusbar": "0.1.11-dev",
     "nl.x-services.plugins.socialsharing": "4.3.15",
-    "com.danielcwilson.plugins.googleanalytics": "0.7.0",
     "com.connectsdk.cordovaplugin": "1.2.0",
-    "org.apache.cordova.file": "1.3.3",
-    "com.google.playservices": "19.0.0"
+    "com.danielcwilson.plugins.googleanalytics": "0.6.1",
+    "org.apache.cordova.file": "1.3.3"
 }
 // BOTTOM OF METADATA
 });
