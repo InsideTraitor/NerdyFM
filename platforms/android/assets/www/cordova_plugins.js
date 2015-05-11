@@ -72,6 +72,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.connectsdk.cordovaplugin/www/ConnectSDK.js",
+        "id": "com.connectsdk.cordovaplugin.ConnectSDK.js",
+        "merges": [
+            "navigator.ConnectSDK",
+            "ConnectSDK"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -232,6 +240,7 @@ module.exports.metadata =
     "org.apache.cordova.statusbar": "0.1.11-dev",
     "nl.x-services.plugins.socialsharing": "4.3.15",
     "com.danielcwilson.plugins.googleanalytics": "0.7.0",
+    "com.connectsdk.cordovaplugin": "1.2.0",
     "org.apache.cordova.file": "1.3.3",
     "com.google.playservices": "19.0.0"
 }

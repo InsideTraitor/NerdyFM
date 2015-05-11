@@ -230,6 +230,14 @@ module.exports = [
         "clobbers": [
             "analytics"
         ]
+    },
+    {
+        "file": "plugins/com.connectsdk.cordovaplugin/www/ConnectSDK.js",
+        "id": "com.connectsdk.cordovaplugin.ConnectSDK.js",
+        "merges": [
+            "navigator.ConnectSDK",
+            "ConnectSDK"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -246,7 +254,8 @@ module.exports.metadata =
     "org.apache.cordova.media": "0.2.16",
     "org.apache.cordova.statusbar": "0.1.11-dev",
     "nl.x-services.plugins.socialsharing": "4.3.15",
-    "com.danielcwilson.plugins.googleanalytics": "0.7.0"
+    "com.danielcwilson.plugins.googleanalytics": "0.7.0",
+    "com.connectsdk.cordovaplugin": "1.2.0"
 }
 // BOTTOM OF METADATA
 });

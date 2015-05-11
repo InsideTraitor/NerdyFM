@@ -82,5 +82,12 @@
             "type": "registry",
             "id": "com.google.playservices@19.0.0"
         }
+    },
+    "com.connectsdk.cordovaplugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ConnectSDK/Connect-SDK-Cordova-Plugin.git",
+            "subdir": "."
+        }
     }
 }
