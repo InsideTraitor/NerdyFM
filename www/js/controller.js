@@ -29,6 +29,24 @@ angular.module('nerdyfm.controller', [])
     });
 })
 
+.controller('ChromeCastCtrl', function($scope) {
+    
+    $scope.showDevicePicker = function() {
+        ConnectSDK.discoveryManager.pickDevice().success(function (device) {
+            var sendVideo = function() {
+                device.getMediaPlayer().playMedia("http://media.w3.org/2010/05/sintel/trailer.mp4", "video/mp4");
+            };
+
+            if (device.isReady()) { // already connected
+                sendVideo();
+            } else {
+                device.on("ready", sendVideo);
+                device.connect();
+            }
+        });
+    };
+})
+
 //Controls the track popup
 .controller('TrackCtrl', function($rootScope, $scope, $ionicModal) {
 

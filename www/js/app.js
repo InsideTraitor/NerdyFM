@@ -29,6 +29,12 @@ angular.module('nerdyfm', ['ionic', 'nerdyfm.controller', 'ngCordova'])
             // console.log(e);
         }
 
+        try {
+            ConnectSDK.discoveryManager.startDiscovery();
+        } catch (e) {
+            // console.log(e);
+        }
+
         $rootScope.favorites = window.localStorage.favorites ? JSON.parse(window.localStorage.favorites) : [];
 
         ionic.EventController.globalPlay = function() {
